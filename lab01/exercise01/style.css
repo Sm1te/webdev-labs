@@ -4,9 +4,15 @@ body * {
 
 
 .s1 {
+    margin: 10px;
     width: 400px;
-    display: block;
     border: 1px solid green;
+    padding-bottom: 10px;
+}
+
+section h2, section p, section button{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .card1 {
     font-weight: bold;
