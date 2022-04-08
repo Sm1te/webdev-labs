@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+html,
+body {
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+
+.carousel {
+    --current-slide: 0;
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: white;
+
+    /* basic styling */
+    padding: 0;
+    margin: 0.5rem;
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.carousel-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+    /* The "next slide button" will be at the right */
+    right: 0;
+}
+
+.slides {
+    transition: transform 0.5s;
+    /* 
+        each time the current slide increments, 
+        x-position shifts by 100% of screen
+    */
+    transform: translateX(calc(-100% * var(--current-slide)));
+    display: flex;
+    color: white;
+    height: 100vh;
+}
+
+.slide {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 300;
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 15vw;
+    box-sizing: border-box;
+    background-color: #109496; 
+}
+
+.slide .quote-symbol {
+    font-size: 4em;
+    top: 50px;
+    position: relative;
+}
+
+.slide cite {
+    text-transform: uppercase;
+    color: #603958;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+@media screen and (min-width: 768px) {
+  .carousel-button {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+

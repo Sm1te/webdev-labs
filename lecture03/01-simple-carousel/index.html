@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="carousel.css">
+    <script src="carousel.js" defer></script>
+</head>
+<body>
+    <div class="carousel" role="group" aria-roledescription="carousel" data-carousel aria-label="Student testimonials">
+    
+        <!-- Left / Right Arrows-->
+        <div class="carousel-buttons">
+            <button
+                class="carousel-button carousel-button_previous"
+                aria-label="Previous slide"
+                data-carousel-button-previous>
+                    <span class="fas fa-chevron-left"></span>
+            </button>
+            <button
+                class="carousel-button carousel-button_next"
+                aria-label="Next slide"
+                data-carousel-button-next >
+                    <span class="fas fa-chevron-right"></span>
+            </button>
+        </div>
+
+        <section class="slides" aria-live="polite" data-carousel-slides-container>
+            
+            <!-- Slide #1-->
+            <div class="slide" role="group" aria-roledescription="slide" aria-hidden="false">
+                <p>
+                    <span class="quote-symbol">&ldquo;</span>
+                    We May Encounter Many Defeats But We Must Not Be Defeated.
+                </p>
+                <cite> 
+                    Maya Angelou
+                </cite>     
+            </div>
+
+            <!-- Slide #2-->
+            <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true">
+                <p>
+                    <span class="quote-symbol">&ldquo;</span>
+                    The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.
+                </p>
+                <cite> 
+                    Winston Churchill
+                </cite>  
+            </div>
+
+            <!-- Slide #3-->
+            <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true"> 
+                <p>
+                    <span class="quote-symbol">&ldquo;</span>
+                    Don't Let Yesterday Take Up Too Much Of Today.
+                </p>
+                <cite> 
+                    Will Rogers
+                </cite> 
+            </div>
+
+            <!-- Slide #4-->
+            <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true"> 
+                <p>
+                    <span class="quote-symbol">&ldquo;</span>
+                    You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.
+                </p>
+                <cite> 
+                    Unknown
+                </cite>  
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
